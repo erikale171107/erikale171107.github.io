@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de</title>
+    <link rel="stylesheet" href="styles/acerca-de.css">
+</head>
+
+<body>
+    
+    <header>
+        <h1>Laboratorio Dardush</h1>
+        <p>"Descubre quien somos!"</p>
+    </header>
+    
+    <div class="navbar" id="miNavbar">
+      <a>  </a>
+      <a href="inicio.html">Inicio</a>
+      <a href="pedidos.html">Productos</a>
+      <a href="acerca de.html">Acerca de</a>
+      <a href="contacto.html">Carrito</a>
+      <a href="javascript:void(0);" class="icon" onclick="miFuncion()">
+        &#9776;
+      </a>
+    </div>
+
+ 
+
+  <div class="container">
+    <div class="card">
+      <img src="iconos copy/mvyv.jpg" alt="Image 1">
+      <div class="info">
+        <h3>Mision, Vision y Valores</h3>
+        <h4>Misión: </h4>
+          <p>Ser pioneros en el desarrollo y fabricación de productos que contribuyan de manera significativa 
+          a la mejora de la calidad de vida de la población. Comprometiéndonos en ofrecer productos de la más alta calidad
+          , respaldados por la innovación y la excelencia en la producción. Buscamos constantemente superar las expectativas 
+          del mercado y ser reconocidos como líderes en la industria, manteniendo siempre nuestro compromiso con la salud y 
+          el bienestar de nuestros clientes. </p> 
+          <h4>Visión:</h4> 
+          <p>Ser reconocidos a nivel nacional como una empresa líder en la industria de la salud y el bienestar.
+          Aspiramos a ser la elección preferida de los consumidores en la búsqueda de productos naturales y de calidad superior.
+          Nos esforzamos por expandir continuamente nuestro portafolio de productos, manteniendo altos estándares de investigación,
+          desarrollo y fabricación. Buscamos ser agentes de cambio positivo en la vida de las personas, ofreciendo soluciones que
+          promuevan la salud, la belleza y el equilibrio en armonía con la naturaleza. </p>
+          <h4>Valores:</h4> 
+          <p>Honestidad: Ser veraz, ético y coherente con lo que se dice y se hace. Se debe estar dispuesto a anteponer la
+          sinceridad a cualquier otra consideración, se refiere a la integridad y veracidad en todas las interacciones y
+          transacciones comerciales. Implica la transparencia en la comunicación, la divulgación precisa de información y el 
+          cumplimiento de compromisos y acuerdos...</p>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="iconos copy/organigramadush.jpg" alt="Image 2" >
+      <div class="info">
+        <h3>Historia de la empresa y Organigrama </h3>
+        <p>Como anteriormente fue mencionado todo comenzó a partir de un sueño que tuvo el dueño de la empresa,
+          a partir de ese sueño el se propuso la meta de cumplir el sueño de tener su propia microempresa y el trabajar ahí
+          para permitirse conocer sus procedimientos desde cero y así poderlos enseñar  <br>
+          Algunos de sus productos son auxiliares en los tratamientos como cáncer, diabetes, problemas estomacales,
+          suplementos alimenticios, infecciones virales, fortalecer el sistema inmunológico, desintoxicar y en la menopausia
+          entre otros. ..</p>
+      </div>
+    </div>
+  
+    <div class="card">
+      <img src="html-productos/publisidad/fachada.jpg" alt="Image 2" >
+      <div class="info">
+        <h3>Instalaciones</h3>
+        <p>Esta es la fachada de nuestras instalaciones</p>
+      </div>
+    </div>
+  
+    
+    <!-- ... más tarjetas ... -->
+  </div>
+
+
+    <footer>
+        <img src="iconos copy/marca de dardush.png" alt=" " width="100" height="100" />
+
+        <nav>
+          <a href="https://www.facebook.com/laboratoriodardush/about">
+            <img src="iconos copy/facebook.png" alt="" width="30" height="30">
+          </a> |
+          <a href="https://www.instagram.com/laboratoriodardush/">
+            <img src="iconos copy/instagram.png" width="30" height="30">
+          </a> |
+          <a href="tel:+5256 1843 4831">
+            <img src="iconos copy/whatsapp (1).png" alt="" width="30" height="30">
+          </a> |
+          <a href="#contact">
+            <img src="iconos copy/linea.png" alt="" width="30" height="30">
+          </a>
+        </nav>
+
+        <p>&copy;  Dardush Holistic  </p>
+    </footer>
+    <script>
+
+function miFuncion() {
+  var x = document.getElementById("miNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>

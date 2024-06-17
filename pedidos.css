@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    background-image: url('fondo-verde-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Estilos para las imágenes en cualquier dispositivo */
+.imagen {
+  margin: 30px; /* Esto añade un espacio de 20px alrededor de cada imagen */
+   width: calc(20% - 10px); /* Calcula el ancho para 2 imágenes con margen */
+   height: auto; /* Mantiene la proporción de las imágenes */
+ }
+ 
+ /* Estilos para las imágenes en teléfonos */
+ @media screen and (max-width: 600px) {
+   .imagen {
+     width: calc(100% - 40px); /* Ajusta el ancho para 1 imagen con margen en dispositivos más pequeños */
+   }
+ }
+ 
+ /* Contenedor para las imágenes */
+ .contenedor-imagenes {
+   display: flex; /* Usa Flexbox para alinear las imágenes */
+   flex-wrap: wrap; /* Permite que las imágenes se ajusten al cambiar el tamaño de la pantalla */
+   justify-content: center; /* Centra las imágenes horizontalmente */
+ }
+
+.navbar {
+    overflow: hidden;
+    background-color: #067a2387;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Menú desplegable para móviles */
+  .navbar a.icon {
+    display: none;
+  }
+  
+  /* Estilos para pantallas de computadora */
+  @media screen and (min-width: 600px) {
+    .navbar a:not(:first-child) {
+      display: block;
+    }
+    .navbar a.icon {
+      display: none;
+    }
+  }
+  
+  /* Estilos para pantallas de teléfono */
+  @media screen and (max-width: 599px) {
+    .navbar a:not(:first-child) {
+      display: none;
+    }
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* Estilos para el menú desplegable activo */
+  @media screen and (max-width: 599px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
+
+header {
+    background-color: #067a2387;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+}
+
+
+.contenedor { max-width: 700px; margin: auto; }
+.producto { border: none; margin-bottom: 10px; padding: 10px;  }
+
+
+
+
+
+footer {
+    background-color: #067a2387;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+}

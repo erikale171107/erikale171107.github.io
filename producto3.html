@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+
+  background-image: url("fondo-verde-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h4{
+    color: crimson;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.product-container {
+  max-width: 700px;
+  margin: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.product-image {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+.product-description {
+  margin: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  
+
+}
+.button {
+  display: block;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+
+<div class="product-container">
+  <img src="publisidad/3.png" alt="Nombre del Producto" class="product-image">
+  
+  <div class="product-description">
+    <h1>AJODUSH-L</h1> 
+    <h4>109.40</h4>
+    <button class="button" onclick="enviarCarrito()">Agregar al carrito</button>
+    <a href="#" class="button">Comprar Ahora</a>
+    <p>Gracias a su formula natural a base de; ajo-perejily lecitina de soya, esta indicado como auxilar en el tratamiento de:</p>
+    <br>-Disminuir la hipertencion arterial
+    <br>-Favorece la circulacion
+    <br>-Ayuda a convatir infecciones en el sistema respiratorio
+    <br>-eliminador de sodio
+    <br>-Auxiliar en combatir el colesterol malo
+    <h3>Incluye 60 Capsulas</h3>
+    <p>600 mg</p>
+    
+  </div>
+  
+  
+</div>
+
+<div id="carrito">
+  <!-- Los productos irían aquí -->
+</div>
+
+
+<script>
+// Supongamos que tienes un array con los productos del carrito
+var carrito = [
+  { id: 1, nombre: 'AJODUSH-L', precio: 109.40 },
+  // Más productos...
+];
+
+function enviarCarrito() {
+  // Convertir el carrito a una cadena JSON para almacenamiento
+  localStorage.setItem('carrito', JSON.stringify(carrito));
+  window.location.href = "../contacto.html"; // Redirige a la página de checkout
+}
+
+
+</script>
+
+</body>
+</html>
